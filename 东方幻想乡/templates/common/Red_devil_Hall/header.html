@@ -1,0 +1,58 @@
+<style>
+    #header{
+        width: 900px;
+        height: 40px;
+        margin: 10px auto;
+        padding-top: 10px;
+    }
+    #header table{
+        width: 900px;
+        height: 40px;
+    }
+    #header table th{
+        width: 200px;
+        background-color: pink;
+        font-size: 30px;
+        font-family: 楷体;
+    }
+    a{
+        text-decoration: none;
+    }
+</style>
+<script type="text/javascript">
+    window.onload = function () {
+        let lis = document.getElementsByTagName('th');
+        for (let i = 0;i < lis.length;i++){
+            lis[i].onmouseover = function () {
+                this.style.backgroundColor = "blue";
+            };
+            lis[i].onmouseout = function () {
+                this.style.backgroundColor = "pink";
+            };
+        }
+    }
+</script>
+<div id="header">
+    <table>
+        <tr>
+            <th id="th1">
+                <a href="{{ url_for('hello_world') }}">
+                    首页
+                </a>
+            </th>
+            <th id="th2">
+                <a href="http://127.0.0.1:5000/">列表
+                </a>
+            </th>
+            <th id="th3">
+                <a href="http://127.0.0.1:5000/">视频
+                </a>
+            </th>
+            <th id="th4">
+                <a href="http://127.0.0.1:5000/">关于我们
+                </a>
+            </th>
+        </tr>
+    </table>
+</div>
+<hr>

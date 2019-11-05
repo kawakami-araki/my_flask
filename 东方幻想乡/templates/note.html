@@ -1,0 +1,74 @@
+{% extends 'common/Red_devil_Hall/base.html'%}
+{% block title %}
+红魔馆
+{% endblock %}
+{% block imga %}
+    <img src="{{ url_for('static',filename='background_imaga/logo1.png') }}" alt="永远鲜红的幼月">
+{% endblock %}
+{% block note_bose %}
+    <ul id="ul_1">
+        {% for i in my_list %}
+        <li><a href="">{{ i.company }}</a></li>
+        {% endfor %}
+    </ul>
+    <div>
+        <table id="photos_tb">
+            <tr>
+                <th id="p_th_1">1</th>
+                <th id="p_th_2">2</th>
+                <th id="p_th_3">3</th>
+                <th id="p_th_4">4</th>
+                <th id="p_th_5">5</th>
+                <th id="p_th_6">6</th>
+                <th id="p_th_7">7</th>
+                <th id="p_th_8">8</th>
+                <th id="p_th_9">9</th>
+                <th id="p_th_10">10</th>
+            </tr>
+        </table>
+    </div>
+    <script>
+        window.onload = function () {
+            let p_th_1 = document.getElementById('p_th_1');
+            p_th_1.onclick = function () {
+                window.location = "{{ url_for('note_bp.note',num=0) }}"
+            };
+            let p_th_2 = document.getElementById('p_th_2');
+            p_th_2.onclick = function () {
+                window.location = "{{ url_for('note_bp.note',num=1) }}"
+            };
+            let p_th_3 = document.getElementById('p_th_3');
+            p_th_3.onclick = function () {
+                window.location = "{{ url_for('note_bp.note',num=2) }}"
+            };
+            let p_th_4 = document.getElementById('p_th_4');
+            p_th_4.onclick = function () {
+                window.location = "{{ url_for('note_bp.note',num=3) }}"
+            };
+            let p_th_5 = document.getElementById('p_th_5');
+            p_th_5.onclick = function () {
+                window.location = "{{ url_for('note_bp.note',num=4) }}"
+            };
+            let p_th_6 = document.getElementById('p_th_6');
+            p_th_6.onclick = function () {
+                window.location = "{{ url_for('note_bp.note',num=5) }}"
+            };
+            let p_th_7 = document.getElementById('p_th_7');
+            p_th_7.onclick = function () {
+                window.location = "{{ url_for('note_bp.note',num=6) }}"
+            };
+            let p_th_8 = document.getElementById('p_th_8');
+            p_th_8.onclick = function () {
+                window.location = "{{ url_for('note_bp.note',num=7) }}"
+            };
+            let p_th_9 = document.getElementById('p_th_9');
+            p_th_9.onclick = function () {
+                window.location = "{{ url_for('note_bp.note',num=8) }}"
+            };
+            let p_th_10 = document.getElementById('p_th_10');
+            p_th_10.onclick = function () {
+                window.location = "{{ url_for('note_bp.note',num=9) }}"
+            }
+        }
+    </script>
+{% endblock %}

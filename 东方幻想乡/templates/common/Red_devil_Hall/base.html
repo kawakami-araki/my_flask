@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Red_devil_Hall 红魔馆模板{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/note.css') }}">
+
+</head>
+<body style="background-color: rgb(165,60,68);">
+    {% include 'common/music.html' %}
+    <div id="box1">{% block imga %}logo图片{% endblock %}</div>
+    {% include "common/Red_devil_Hall/header.html" %}
+    <div id="box2">
+        <div id="box2_1">
+            <div id="box2_1_1">
+                {% block note_bose %}
+                内容填充
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+    {% block footer %}
+    {% include 'common/Red_devil_Hall/footer.html' %}
+    {% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>博丽大结界</title>
+    <style>
+        *{
+            background-color: rgb(21,3,25);
+            color: indigo;
+            margin: 0;
+            padding: 0;
+            font-family: 楷体;
+        }
+        #box01{
+            width: 214px;
+            height: 180px;
+            margin: 50px auto;
+        }
+        #box03{
+            padding-top: 100px;
+        }
+        .box{
+            width: 100%;
+            height: 80px;
+            text-align: center;
+        }
+        a{
+            font-weight: normal;
+            padding: 0 50px;
+        }
+        h1{
+            padding-bottom: 50px;
+        }
+    </style>
+    <script type="text/javascript">
+
+    </script>
+</head>
+<body>
+{% include 'common/music.html' %}
+<div id="box01">
+    <img src="../static/background_imaga/logo.png" alt="再看就把你隙间掉哦">
+</div>
+<div id="box02" class="box">
+    <h1>欢迎来到幻想乡</h1>
+    <a href="https://www.baidu.com">Girls_Do</a>
+    <a href="https://www.bilibili.com">Bilibili</a>
+    <a href="https://nanarino.github.io/markdown-note/">Kakuwananari</a>
+    <a href="https://github.com">Git</a>
+    <a href="http://www.akokono.com">Akokono</a>
+    <a href="https://www.nyato.com">Nyato</a>
+</div>
+<div id="box03" class="box">
+    <h1>以下是本人自制的一些网页</h1>
+    <a href="{{ url_for('note_bp.note',num=1) }}">Red devil Hall</a>
+    <a href="{{ url_for('inner') }}">Inner world</a>
+    <a href="{{ url_for('photos_bp.photos') }}">Memory corridor</a>
+</div>
+</body>
+</html>

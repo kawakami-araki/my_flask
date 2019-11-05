@@ -1,0 +1,25 @@
+<style>
+    #footer{
+        width: 100%;
+        height: 100px;
+        background-color: plum;
+    }
+    #footer_1{
+        width: 700px;
+        margin: 50px auto;
+        padding-top: 40px;
+    }
+    #footer_1 a{
+        margin: 50px;
+
+    }
+</style>
+<div id="footer">
+    <div id="footer_1" style="text-align: center">
+        <a href="https://zh.moegirl.org/Mainpage">萌娘百科</a>
+        <a href="https://www.bilibili.com">Bilibili</a>
+        <a href="{{ url_for('photos_bp.photos') }}">Memory_corridor</a>
+        <a href="{{ url_for('note_bp.note',num=1) }}">Red_devil_Hall</a>
+        <a href="{{ url_for('inner') }}">Inner_world</a>
+    </div>
+</div>

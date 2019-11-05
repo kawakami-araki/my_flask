@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#box1{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+#box2{
+    height: 90%;
+}
+#box2_1{
+    width: 900px;
+    height: 85%;
+    margin: 50px auto;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+#box2_1_1{
+    width: 800px;
+    height: 90%;
+    margin: 50px auto;
+    border-top: 2px solid black;
+    border-bottom: 3px solid black;
+    text-align: center;
+}
+#box2_1_1 img{
+    width: 600px;
+    padding: 20px 0;
+}
+#ul_1 li{
+    margin-top: 30px;
+}
+#photos_tb{
+    width: 100%;
+    height: 40px;
+    margin: 50px  auto;
+
+}
+#photos_tb tr th{
+    width: 30px;
+    height: 30px;
+    border: 1px solid gray;
+    border-collapse: unset;
+}

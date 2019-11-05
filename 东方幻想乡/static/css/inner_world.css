@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aliceblue;
+}
+a{
+    text-decoration: none;
+}
+#box1{
+    width: 200px;
+    margin: 0 auto;
+}
+#box2{
+    width: 600px;
+    height: 80px;
+    margin: 0 auto;
+    background-color: cornflowerblue;
+    text-align: center;
+    border-radius: 30px;
+}
+#box2_tb th{
+    width: 100px;
+    height: 80px;
+}
+

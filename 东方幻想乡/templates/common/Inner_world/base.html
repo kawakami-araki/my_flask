@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Inner_world 人间之里模板{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/inner_world.css') }}">
+</head>
+<body>
+
+    {% include 'common/music.html' %}
+    <div id="box1">{% block image %}logo图片{% endblock %}</div>
+    {% include "common/Inner_world/header.html" %}
+    <div id="box3"></div>
+    {% block body %}
+        Inner_world 人间之里模板
+    {% endblock %}
+
+    {% block footer %}
+    {% include "common/Inner_world/footer.html" %}
+    {% endblock %}
+</body>
+</html>
